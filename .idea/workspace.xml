@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bbdf6f-99c5-4624-801c-668e41eef755" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example$NameFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/djb-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="f9bbdf6f-99c5-4624-801c-668e41eef755" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +28,7 @@
     <session id="-1577742448">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -49,7 +39,7 @@
         <counts>
           <entry key="java" value="644" />
           <entry key="md" value="263" />
-          <entry key="txt" value="14" />
+          <entry key="txt" value="49" />
           <entry key="xml" value="30" />
         </counts>
       </usages-collector>
@@ -57,7 +47,7 @@
         <counts>
           <entry key="JAVA" value="644" />
           <entry key="Markdown" value="263" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="49" />
           <entry key="XML" value="30" />
         </counts>
       </usages-collector>
@@ -94,7 +84,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="144">
-                <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -188,9 +178,9 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="949" />
-    <option name="width" value="979" />
-    <option name="height" value="1042" />
+    <option name="x" value="947" />
+    <option name="width" value="980" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,6 +194,11 @@
             <path>
               <item name="PdfToImage" type="b2602c69:ProjectViewProjectNode" />
               <item name="PdfToImage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PdfToImage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PdfToImage" type="462c0819:PsiDirectoryNode" />
+              <item name=".git" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PdfToImage" type="b2602c69:ProjectViewProjectNode" />
@@ -353,7 +348,7 @@
       <updated>1539844831805</updated>
       <workItem from="1539844835387" duration="8498000" />
       <workItem from="1539909440192" duration="5620000" />
-      <workItem from="1539928282380" duration="637000" />
+      <workItem from="1539928282380" duration="1370000" />
     </task>
     <task id="LOCAL-00001" summary="尝试变为git管理">
       <created>1539920800294</created>
@@ -362,15 +357,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539920800294</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.0 可以使用版&#10;内存占用率很高,40M的PDF能吃到3G内存.">
+      <created>1539928990295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539928990295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14755000" />
+    <option name="totallyTimeSpent" value="15488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1538" height="831" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23986487" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -406,7 +407,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="尝试变为git管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试变为git管理" />
+    <MESSAGE value="1.0 可以使用版&#10;内存占用率很高,40M的PDF能吃到3G内存." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0 可以使用版&#10;内存占用率很高,40M的PDF能吃到3G内存." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -443,7 +445,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="144">
-            <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
