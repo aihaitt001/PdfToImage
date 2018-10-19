@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -42,18 +43,13 @@ public class Example {
                 System.out.println("D盘下没有文件夹pdf");
                 pdfsrc.mkdirs();
                 System.out.println("创建D:/pdf成功");
-
             }
             //把所有PDF文件过滤出来
-            File[] filelist = pdfsrc.listFiles(new NameFilter());
-            if (filelist.length == 0) {
-                System.out.println("在D:/pdf下没有pdf文件");
-                System.exit(0);
-            }
-            for (File file : filelist) {
-                System.out.println(file.getName());
-            }
+            File[] filelist = getFileList(pdfsrc);
 
+            for (File file : filelist) {
+                System.out.println("扫描到文件:" + file.getName());
+            }
             for (File file : filelist) {
                 System.out.println(file.getName() + "开始转化");
                 convertPdfToImage(file);
@@ -65,11 +61,33 @@ public class Example {
         }
     }
 
+    static public File[] getFileList(File pdfsrc) {
+
+        File[] filelist = pdfsrc.listFiles(new NameFilter());
+        while (filelist.length == 0) {
+            System.out.println("在D:/pdf下没有pdf文件,请在把PDF放入文件夹后,输入\"1\"重新扫描");
+
+            int inputint = 0;
+            try {
+                inputint = new Scanner(System.in).nextInt();
+            }catch(Exception e){
+                System.out.println("不要输入其他的值,输入\"1\"");
+            }
+            if (inputint == 1) {
+                filelist = pdfsrc.listFiles(new NameFilter());
+            }
+        }
+        return filelist;
+    }
+
     static class NameFilter implements FilenameFilter {
+
+        private final String type = ".pdf";
+
         @Override
         public boolean accept(File dir, String name) {
 
-            if (name != null && name.toLowerCase().endsWith(".pdf")) {
+            if (name != null && name.toLowerCase().endsWith(type)) {
                 return true;
             } else {
                 return false;
@@ -90,7 +108,7 @@ public class Example {
             // 200 is sample dots per inch.
             ImageIO.write(image, "JPEG", fileTemp); // JPEG or PNG
             fileList.add(fileTemp);
-            System.out.println("第" + i + "页完成...");
+            System.out.println("第" + (i + 1) + "页完成...");
         }
         doc.close();
 
